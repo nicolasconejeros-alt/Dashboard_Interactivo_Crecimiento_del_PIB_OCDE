@@ -1,6 +1,3 @@
-# Ultimo_Proyecto
-Repositorio del ultimo proyecto de programación.
-
 # Dashboard Interactivo - Crecimiento del PIB OCDE
 
 ## Descripción:
