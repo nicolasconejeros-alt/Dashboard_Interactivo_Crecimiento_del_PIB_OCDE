@@ -9,6 +9,19 @@ st.set_page_config(
 )
 Logo = st.sidebar.image("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpjWwKg2T0Y8Uek5thVlKtlQQyjijaqRWlpSw7qLSFeA&s=10")
 
+#Lista de La OCDE (Organización para la Cooperación y el Desarrollo Económicos)
+ocde = [
+    'Alemania','Australia','Austria','Bélgica','Canadá',
+    'Chile','Colombia','Corea, República de','Costa Rica',
+    'Dinamarca','República Eslovaca','Eslovenia','España',
+    'Estados Unidos','Estonia','Finlandia','Francia',
+    'Grecia','Hungría','Irlanda','Islandia','Israel',
+    'Italia','Japón','Letonia','Lituania','Luxemburgo',
+    'México','Noruega','Nueva Zelandia','Países Bajos',
+    'Polonia','Portugal','Reino Unido','República Checa',
+    'Suecia','Suiza','Turquía'
+]
+
 st.title("📈 Dashboard del Crecimiento del PIB")
 
 df = pd.read_csv("pib.csv")
@@ -22,7 +35,7 @@ paises = sorted(df["Country Name"].dropna().unique())
 # Sidebar
 pais = st.sidebar.selectbox(
     "Seleccione un país",
-    paises
+    ocde
 )
 
 st.sidebar.write("Nicolás Conejeros")
@@ -36,18 +49,6 @@ inicio, fin = st.slider(
     value=(2000, 2024)
 )
 
-#Lista de La OCDE (Organización para la Cooperación y el Desarrollo Económicos)
-ocde = [
-    'Alemania','Australia','Austria','Bélgica','Canadá',
-    'Chile','Colombia','Corea, República de','Costa Rica',
-    'Dinamarca','República Eslovaca','Eslovenia','España',
-    'Estados Unidos','Estonia','Finlandia','Francia',
-    'Grecia','Hungría','Irlanda','Islandia','Israel',
-    'Italia','Japón','Letonia','Lituania','Luxemburgo',
-    'México','Noruega','Nueva Zelandia','Países Bajos',
-    'Polonia','Portugal','Reino Unido','República Checa',
-    'Suecia','Suiza','Turquía'
-]
 
 datos_pais = df[df["Country Name"] == pais]
 
