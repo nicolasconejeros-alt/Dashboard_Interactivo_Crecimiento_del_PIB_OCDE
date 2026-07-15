@@ -25,7 +25,7 @@ El usuario puede:
 
 ## Repositorio GitHub:
 
-https://github.com/nicolasconejeros-alt/Ultimo_Proyecto/tree/main
+https://github.com/nicolasconejeros-alt/Dashboard_Interactivo_Crecimiento_del_PIB_OCDE
 
 ## Dashboard:
 
