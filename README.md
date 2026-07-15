@@ -29,4 +29,4 @@ https://github.com/nicolasconejeros-alt/Dashboard_Interactivo_Crecimiento_del_PI
 
 ## Dashboard:
 
-(Aquí irá el enlace de Streamlit)
+https://dashboardinteractivocrecimientodelpibocde-cvslp2dq6ifsofzqftyq.streamlit.app/
